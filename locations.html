@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jipoteze - Places I've Been</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Varela+Round&display=swap" rel="stylesheet">
+    <!--Set up the icon for the website, including alternative icon sizes-->
+    <link rel="icon" type="image/x-icon" href="assets/media/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/media/jipoteze-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/media/jipoteze-16x16.png" sizes="16x16" />
+    <!--The website uses Google's Javascript Map API to display locations on a map-->
+    <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAU-AIymzdrqG-p2z5YAuMXSBun4LI3Ke8&callback=showMap">
+    </script>
+  </head>
+  <body class="m-0">
+    <header class="other-header">
+      <figure id="site-logo" class="m-0 p-p5 txt-c"><a class="img-a" href="index.html"><img src="assets/media/jipoteze-150x150.png" alt="Jipoteze" title="Click Here for Home"></a></figure>
+      <nav>
+        <figure class="p-1 txt-c"><img src="assets/media/icons/open-menu.png" alt="Menu"></figure>
+        <ul id="dropdown" class="flex p-p75">
+          <li class="you-here"><a href="locations.html">Places I've Been</a></li>
+          <li><a href="review.html">Your Experience</a></li>
+          <li><a href="resources.html">Site Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p class="p-1">Marked below are but a few of the places I have been to in Nairobi, few moreso compared to the multitudes of experiences that my city has to offer. Somehow there still ends up being room for new experiences to develop back home, and it is not just in the city either; whenever I have the chance to go back home, I learn something new each time. The land is blessed with beauty and opportunity; a good number of foreigners see this and invest greatly. I chose 2 - 3 locations for the five categories listed below. Check them out!</p>
+      <section id="map-nav" class="p-1 txt-c">
+        <h3>Select The Category You Wish To Explore</h3>
+        <div class="flex">
+          <div id="all" class="category p-75 m-0">All Locations</div>
+          <div id="fit" class="category p-75 m-0">Fitness Centers</div>
+          <div id="rest" class="category p-75 m-0">Restaurants</div>
+          <div id="night" class="category p-75 m-0">Lounges and Pubs</div>
+          <div id="mall" class="category p-75 m-0">Shopping Centers</div>
+          <div id="wild" class="category p-75 m-0">Nature and Wildlife Centers</div>
+      </div>
+      </section>
+      <div id="loc-map"></div>
+    </main>
+    <footer class="b-w p-p75 txt-c">
+      <div><p>Jipoteze &copy;</p>
+        <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+        </div>
+      <div id="h-btn-cont" class="p-1"><a id="home-button" class="img-a blocked" href="../index.php" title="ISTE 646 Home Page"><img src="assets/media/icons/home-button.png" alt="ISTE 646 Home Page"></a></div>
+    </footer>
+    <script src="assets/theme.js"></script>
+    <script src="assets/map.js"></script>
+  </body>
+</html>

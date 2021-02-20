@@ -1,0 +1,375 @@
+/*First write up some classes for frequently used styling rules*/
+/*Text align rules*/
+.txt-c{text-align: center;}
+.txt-r{text-align: right;}
+
+/*Padding rules*/
+.p-p5{padding: .5rem;box-sizing: border-box;}
+.p-p75{padding: .75rem;box-sizing: border-box;}
+.p-1{padding: 1rem;box-sizing: border-box;}
+
+/*Margin rules*/
+.m-0{margin: 0}
+.m-p5{margin: .5rem;}
+.m-1{margin: 1rem;}
+.m-v-auto{margin: auto 0;}
+.m-h-auto{margin: 0 auto;}
+
+/*Flex rules*/
+.flex{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+/*"Blockify" an element*/
+.blocked{display: block;}
+
+/*Text contrast rule*/
+.b-w{color: #fcfbfb;background-color: #000000;}
+
+/*Image link rule to override a tag background rule*/
+.img-a{background: none !important;}
+
+/*Headers on other pages beside the home page*/
+.other-header{
+  background-color: #fcfbfb;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+/*Show current page in menu*/
+.you-here{
+  background-color: #b58958 !important;
+  border-bottom: solid 3px #000000 !important;
+  pointer-events: none;
+}
+.you-here a{color: #fcfbfb !important;}
+
+/*Show the navigation menu*/
+.show{
+  display: flex !important;
+}
+
+/*Category guides on the home page that lead to the rest of the site*/
+.cat-guides{
+  z-index:1;
+  position: absolute;
+  transition: all 1.5s;
+  padding: 0;
+  box-sizing: border-box;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.cat-guides h2, .cat-guides p{
+  width: calc(100vw - 4rem);
+}
+.cat-pics{
+  margin: 1rem auto;
+  width: 250px !important;
+  line-height: 0;
+}
+/*Arrows for the respective main page sections*/
+.guide-arrows{
+  position: absolute;
+  cursor: pointer;
+  width:50px;
+  height: 50px;
+  border-radius: 27px;
+  padding: 2.5px;
+  line-height: 0;
+  margin: .5rem;
+}
+.guide-arrows img{margin:2.5px;}
+
+/*Category options on the map page*/
+.category{
+  border-radius: 3px;
+  border-bottom: solid 3px #1f4c0d;
+  cursor: pointer;
+  width: 350px;
+}
+/*Display of location option on blog entry form*/
+.form-group{
+  margin: 1rem;
+  border-top: solid 3px #a50016;
+}
+
+/*Display of experiences on blog*/
+.blog-post h3{
+  background-color:#fcfbfb;
+  border-radius: 3px;
+  width: 320px;
+  position: relative;
+  z-index: 2;
+}
+.blog-post div{
+  color: #fcfbfb;
+  padding-top: 3rem !important;
+  position: relative;
+  top: -3.5rem;
+  left: .5rem;
+  border-radius: 3px;
+  width: 320px;
+}
+
+/*Highlight website resource owners*/
+.res-auth{color: #fcfbfb; background-color: #000000; padding: 3px;text-decoration: none;border-radius: 3px;margin: 0 3px;}
+
+/*Write up tag-specific styling rules*/
+/*General webpage rules*/
+body{
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-color:#b58958;
+  position: relative;
+}
+
+/*Heading styling*/
+h1,h2,h3,h4{font-family: 'Lato', sans-serif;}
+h1{font-size: 2rem; line-height: 3rem;}
+h2{font-size: 1.75rem; line-height: 2.5rem;}
+h3{font-size: 1.5rem; line-height: 2rem;}
+
+/*General link rules*/
+a{color: #fcfbfb; background-color: #1f4c0d; padding: 3px;text-decoration: none;border-radius: 3px;transition: all 1.5s;}
+a:hover{background-color: #a50016;}
+a:active{background-color: #000000;}
+
+/*Navigation rules*/
+nav{
+  z-index: 3;
+  position: absolute;
+  height: auto;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-top: 0;
+}
+
+/*Main content rules*/
+main{
+  padding: 200px 1.5rem 2rem 1.5rem;
+  min-height: calc(100vh - 200px);
+  overflow: hidden;
+}
+
+/*Footer rules: the footer remains the same throughout the website*/
+footer{
+  position: absolute;
+  z-index: -1;
+  top: 100%;
+  width: 100%;
+}
+
+/*Write up element-specific (unique ID) styling rules*/
+/*This is the header for the main page*/
+#main-header{
+  background-color: #fcfbfb;
+  border-radius: 100px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+/*Website logo*/
+#site-logo{
+  position: relative;
+  z-index: 1;
+}
+#main-header #site-logo{cursor: pointer;}
+/*Dropdown Menu*/
+#dropdown{
+  display: none;
+  position: absolute;
+  width: 100vw;
+  top: 95%;
+  right: 0;
+  background-color: #fcfbfb;
+  z-index: 3;
+  box-shadow: 0 2px 2px #000000;
+}
+#dropdown li{list-style-type: none; margin: .25rem;padding: .25rem; display: inline-block;border-bottom: solid 3px #fcfbfb;border-radius: 3px;}
+#dropdown li:hover{border-bottom: solid 3px #000000;}
+#dropdown a{font-weight: bold; color: #1f4c0d; background: none;}
+#dropdown a:hover{color: #a50016;}
+#dropdown a:active{color: #000000;}
+
+/*ISTE 646 Home Button*/
+#h-btn-cont{
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*Main page intro section rules*/
+#intro{
+}
+#me img{border-radius: 125px; border: solid 3px #1f4c0d;}
+#me figcaption{font-family: 'Lato', sans-serif;font-size: 1.5rem;font-weight: bold;}
+
+/*Main element of the main page*/
+#main-main{padding-top: 265px;min-height: calc(100vh - 256px);}
+
+/*Main page section rules*/
+#fitness{
+ background-color: #fcfbfb;
+ right:0;
+ min-height: 100%;
+ height: auto;
+}
+#fitness .cat-pics{border: solid 3px #1f4c0d;}
+#food{
+  color: #fcfbfb;
+  background-color: #a50016;
+  right:0;
+  min-height: 100%;
+  height: auto;
+}
+#food .cat-pics{border:solid 3px #000000;}
+#nightlife{
+  width: 100%;
+  left:0;
+  right:0;
+}
+#nightlife .cat-pics{border:solid 3px #a50016;}
+#shopping{
+  background-color: #b58958;
+  left:0;
+  min-height: 100%;
+  height: auto;
+}
+#shopping .cat-pics{border:solid 3px #fcfbfb;}
+#wildlife{
+  color: #fcfbfb;
+  background-color: #1f4c0d;
+  left: 0;
+  min-height: 100%;
+  height: auto;
+}
+#wildlife .cat-pics{border: solid 3px #b58958;}
+
+#wildlife a{background-color: #000000;}
+#wildlife a:hover{background-color: #a50016;}
+#wildlife a:active{background-color: #1f4c0d;}
+
+/*The arrows representative of the sections*/
+#fitness-arrow{
+  transform: rotate(225deg);
+  left:-70px;
+  top:0;
+  background-color: #fcfbfb;
+}
+#food-arrow{
+  transform: rotate(180deg);
+  top: 50%;
+  left:-70px;
+  background-color: #a50016;
+}
+#nightlife-arrow{
+  transform: rotate(135deg) translate(50%, 50%);
+  top: 100%;
+  left: 50%;
+  background-color: #000000;
+}
+#shopping-arrow{
+  transform: rotate(45deg);
+  top:0;
+  right: -70px;
+  background-color: #b58958;
+}
+#wildlife-arrow{
+  transform: rotate(95deg);
+  top: 50%;
+  right: -70px;
+  background-color: #1f4c0d;
+}
+/*Map page navigation*/
+#map-nav{
+  background-color: #fcfbfb;
+  border-radius: 3px 3px 0 0;
+}
+
+/*Map display*/
+#loc-map{height: 100vh;}
+
+/*Blog entry form*/
+#blog-form fieldset{border: solid #1f4c0d 3px; border-radius: 3px;}
+#blog-form input[type="text"], #blog-form textarea{
+  border: solid #b58958 2px;
+  border-radius: 3px;
+}
+#your-name{max-width: 250px;}
+#blog-form textarea, #xp-title{width: 100%;}
+#blog-form button{
+  font-size: 1.15rem;
+  font-family: 'Lato', sans-serif;
+  color:#fcfbfb;
+  background-color: #000000;
+  border: solid #000000 3px;
+  border-radius: 3px;}
+
+/*Resource page list of resources*/
+#resource-list li{
+  list-style-image: url("media/icons/compass.png");
+  padding: .25rem;
+}
+
+/*Media queries for responsiveness*/
+@media screen and (max-width: 700px){
+  /*Make the header smaller*/
+  #site-logo img{width:80px;}
+  nav img{width:30px;}
+
+  /*Move the dropdown closer to the header*/
+  #dropdown{top: 80px;}
+
+  /*Have the footer be a flex container*/
+  footer{display: block;flex-flow: column;justify-content: center;}
+  #h-btn-cont{position: static; transform: none;}
+
+  /*Change the padding on main page sections when the logo shrinks down*/
+  .cat-guides{padding-top: 180px;}
+
+  /*Adjust the arrow sizes when the logo shrinks*/
+  .guide-arrows{
+    width: 40px;
+    height: 40px;
+    border-radius: 22px;
+  }
+  .guide-arrows img{
+    width: 30px;
+    height: 30px;
+  }
+
+  /*Adjust top padding when the header shrinks*/
+  main{
+    padding-top:125px;
+  }
+  #main-main{
+    padding-top: 185px;
+  }
+}
+@media screen and (max-height: 450px){
+  /*Provide a tall enough map workspace*/
+  #loc-map{height: 150vh;}
+}
+@media screen and (max-width: 325px){
+  /*Have the header be a flex container*/
+  header{display: block;flex-flow: column;justify-content: center;}
+  nav{position: static; transform: none;}
+
+  /*Move the dropdown to the header bottom*/
+  #dropdown{top: 80%;}
+
+  /*Adjust the blog form's field widths*/
+  #blog-form input[type="text"], #blog-form textarea{min-width: 0;width: 98%;}
+}

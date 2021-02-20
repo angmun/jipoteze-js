@@ -1,0 +1,97 @@
+{
+  "categories":["fitness","food","nightlife","shopping","wildlife"],
+  "locations":{
+      "fitness":[{
+            "name":"CrossFit Kwetu",
+            "coordinates":[-1.232885,36.807274],
+            "description":"It hurts so good! Keep up the great work with trainers and fellow students who won't let you quit.",
+            "img_url":"assets/media/locations/crossfit.jpg",
+            "location_url":"https://www.crossfitkwetu.com/"
+          },
+          {
+            "name":"Poles Apart",
+            "coordinates":[-1.301094,36.780461],
+            "description":"You would be surprised how weightless your body can feel, provided you're not flying off the pole! Get flexy with your body.",
+            "img_url":"assets/media/locations/pole.jpg",
+            "location_url":"https://www.polesapartstudio.com/"
+          },
+          {
+            "name":"Bikram Yoga Nairobi",
+            "coordinates":[-1.279825,36.770673],
+            "description":"Sweaty yoga, that's what's up! Don't worry, there will be a juice bar waiting for you to replenish fluids after the experience.",
+            "img_url":"assets/media/locations/bikram.jpg",
+            "location_url":"https://bikramyoganairobi.com/"
+          }],
+      "food":[{
+            "name":"Cheka Japanese Izakaya",
+            "coordinates":[-1.260622,36.775383],
+            "description":"A delightful experience of Japanese cuisine, with traditional seating available and a pretty awesome bar.",
+            "img_url":"assets/media/locations/cheka.jpg",
+            "location_url":"https://www.facebook.com/chekajapaneseizakaya/"
+          },
+          {
+            "name":"For You Chinese Restaurant",
+            "coordinates":[-1.290431,36.774295],
+            "description":"An extremely popular location for Chinese cuisine most suitable for families. You're in for an adorable treat at the end of your meal.",
+            "img_url":"assets/media/locations/foryou.jpg",
+            "location_url":"https://eatout.co.ke/nairobi/for-you-chinese-restaurant"
+          },
+          {
+            "name":"Nagala's Chakula",
+            "coordinates":[-1.210269,36.792711],
+            "description":"If you're looking to sample traditional Swahili delicacies, this is the place to be. Indian cuisine is also available here.",
+            "img_url":"assets/media/locations/nagalas.jpg",
+            "location_url":"https://www.nagalaschakula.co.ke/"
+          }
+        ],
+      "nightlife":[{
+            "name":"Kiza Restaurant & Lounge",
+            "coordinates":[-1.290855,36.782791],
+            "description":"A rather upscale 25 and over fun spot with a restaurant that offers pan-African cuisine and a lounge filled with tasty cocktails, fun beats and a good time.",
+            "img_url":"assets/media/locations/kiza.jpg",
+            "location_url":"https://www.kizalounge.co.ke/"
+          },
+          {
+            "name":"Choices Pub and Restaurant",
+            "coordinates":[-1.301945,36.826524],
+            "description":"A long-running pub with great live music, a chill ambiance all around and amazing prices.",
+            "img_url":"assets/media/locations/choices.jpg",
+            "location_url":"https://www.facebook.com/come2choices"
+          }],
+      "shopping":[{
+            "name":"Two Rivers",
+            "coordinates":[-1.210840,36.794698],
+            "description":"In 2019, this mall opened 'The Eye of Kenya', a ferris wheel that offers an insane view of Nairobi. It is rather young, but offers a wealth of dining, shopping and fun experiences.",
+            "img_url":"assets/media/locations/tworivers.jpg",
+            "location_url":"https://tworivers.co.ke/"
+          },
+          {
+            "name":"Village Market",
+            "coordinates":[-1.230612,36.804132],
+            "description":"A plethora of dining, shopping and fun experiences await you in a mall with an unforgettable style of its own, since 1995. The famous Maasai Market is hosted here every Friday.",
+            "img_url":"assets/media/locations/vima.jpg",
+            "location_url":"https://villagemarket-kenya.com/"
+          }],
+      "wildlife":[{
+            "name":"Karura Forest",
+            "coordinates":[-1.236942,36.830473],
+            "description":"What a way to unwind with nature; have a picnic, take a hike or run around this beautiful forest and let the fresh air heal you.",
+            "img_url":"assets/media/locations/karura.jpg",
+            "location_url":"http://www.kenyaforestservice.org/index.php?option=com_content&view=article&id=77&Itemid=523"
+          },
+          {
+            "name":"Giraffe Centre",
+            "coordinates":[-1.376418,36.744371],
+            "description":"Have you ever wanted to come so close to a Giraffe you can feed it? This is the place to be for this humbling and unforgettable experience.",
+            "img_url":"assets/media/locations/giraffe.jpg",
+            "location_url":"https://www.giraffecentre.org/"
+          },
+          {
+            "name":"Nairobi National Park",
+            "coordinates":[-1.361820,36.845175],
+            "description":"Take a safari against the Nairobi skyline, and experience but a sample of the glorious wildlife Kenya has been blessed with.",
+            "img_url":"assets/media/locations/nnpark.jpg",
+            "location_url":"http://www.kws.go.ke/parks/nairobi-national-park"
+          }]
+  }
+}

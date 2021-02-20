@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jipoteze - Your Experience</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Varela+Round&display=swap" rel="stylesheet">
+    <!--Set up the icon for the website, including alternative icon sizes-->
+    <link rel="icon" type="image/x-icon" href="assets/media/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/media/jipoteze-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/media/jipoteze-16x16.png" sizes="16x16" />
+  </head>
+  <body class="m-0">
+    <header class="other-header">
+      <figure id="site-logo" class="m-0 p-p5 txt-c"><a class="img-a" href="index.html"><img src="assets/media/jipoteze-150x150.png" alt="Jipoteze" title="Click Here for Home"></a></figure>
+      <nav>
+        <figure class="p-1 txt-c"><img src="assets/media/icons/open-menu.png" alt="Menu"></figure>
+        <ul id="dropdown" class="flex p-p75">
+          <li><a href="locations.html">Places I've Been</a></li>
+          <li class="you-here"><a href="review.html">Your Experience</a></li>
+          <li><a href="resources.html">Site Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="txt-c">That's All From Me For The Moment, How About Your Experience?</h1>
+      <form class="p-1 txt-c" id="blog-form" name="blog-form">
+        <label for="your-name">What is your name? (It doesn't have to be your real name) </label><input type="text" id="your-name" class="p-p5" name="your-name" placeholder="Rafiki" autofocus>
+        <fieldset>
+          <legend class="m-h-auto p-p5">What places have you been to yourself?</legend>
+          <div class="flex">
+            <div class="form-group">
+              <h3>Fitness</h3>
+              <input type="checkbox" id="l1" name="l1" value="Bikram Yoga Nairobi"><label for="l1">Bikram Yoga Nairobi</label><br />
+              <input type="checkbox" id="l2" name="l2" value="CrossFit Kwetu"><label for="l2">CrossFit Kwetu</label><br />
+              <input type="checkbox" id="l3" name="l3" value="Poles Apart"><label for="l3">Poles Apart</label>
+            </div>
+            <div class="form-group">
+              <h3>Food</h3>
+              <input type="checkbox" id="l4" name="l4" value="Cheka Japanese Izakaya"><label for="l4">Cheka Japanese Izakaya</label><br />
+              <input type="checkbox" id="l5" name="l5" value="For You Chinese Restaurant"><label for="l5">For You Chinese Restaurant</label><br />
+              <input type="checkbox" id="l6" name="l6" value="Nagala's Chakula"><label for="l6">Nagala's Chakula</label>
+            </div>
+            <div class="form-group">
+              <h3>Nightlife</h3>
+              <input type="checkbox" id="l7" name="l7" value="Choices Pub and Restaurant"><label for="l7">Choices Pub and Restaurant</label><br />
+              <input type="checkbox" id="l8" name="l8" value="Kiza Restaurant & Lounge"><label for="l8">Kiza Restaurant & Lounge</label>
+            </div>
+            <div class="form-group">
+              <h3>Shopping</h3>
+              <input type="checkbox" id="l9" name="l9" value="Two Rivers Mall"><label for="l9">Two Rivers Mall</label><br />
+              <input type="checkbox" id="l10" name="l10" value="Village Market"><label for="l10">Village Market</label>
+            </div>
+            <div class="form-group">
+              <h3>Wildlife</h3>
+              <input type="checkbox" id="l11" name="l11" value="Giraffe Center"><label for="l11">Giraffe Center</label><br />
+              <input type="checkbox" id="l12" name="l12" value="Karura Forest"><label for="l12">Karura Forest</label><br />
+              <input type="checkbox" id="l13" name="l13" value="Nairobi National Park"><label for="l13">Nairobi National Park</label>
+            </div>
+          </div>
+        </fieldset>
+        <p>Would you like to share your own memories of Kenya or where you would like to go?</p>
+        <label for="xp-title">Post Title</label><br /><input type="text" id="xp-title" class="p-p5" name="xp-title" placeholder="My Kenyan Experience"><br />
+        <label for="xp-txt">Post Text</label><br /><textarea id="xp-txt" class="p-p5" name="xp-txt"></textarea><br />
+        <button class="p-p75 m-p5" type="button">Submit Experience</button>
+      </form>
+      <h2 class="txt-c">Experience Posts</h2>
+      <div id="entries" class="p-1 flex">
+      </div>
+    </main>
+    <footer class="b-w p-p75 txt-c">
+      <div><p>Jipoteze &copy;</p>
+        <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+        </div>
+      <div id="h-btn-cont" class="p-1"><a id="home-button" class="img-a blocked" href="../index.php" title="ISTE 646 Home Page"><img src="assets/media/icons/home-button.png" alt="ISTE 646 Home Page"></a></div>
+    </footer>
+    <script src="assets/theme.js"></script>
+    <script src="assets/blog.js"></script>
+  </body>
+</html>
